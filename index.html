@@ -323,10 +323,7 @@ function resetBooking(){ui.bkSpec=ui.bkDate=ui.bkTime=ui.bkTrt=ui.confirmed=null
 /* ---------- shared bits ---------- */
 function topbar(extra){
   return `<div class="topbar">
-    <div style="display:flex;gap:10px;align-items:center">
-      <button class="iconbtn" data-action="go-home-btn" aria-label="חזרה לדף הבית" title="דף הבית">${ICON_HOME}</button>
-      <img class="logo-sm" src="${LOGO}" alt="Yarden Askayo">
-    </div>
+    <img class="logo-sm" src="${LOGO}" alt="Yarden Askayo">
     <div style="display:flex;gap:8px">${extra||''}<button class="linkbtn" data-action="logout">יציאה</button></div>
   </div>`;
 }
@@ -678,6 +675,7 @@ function admSettings(){
 }
 
 /* ---------- render ---------- */
+let lastView=null;
 function render(){
   const app=document.getElementById('app');
   const v=ui.view;
@@ -692,7 +690,11 @@ function render(){
   else if(v==="spec")html=vSpec();
   else if(v==="admin")html=vAdmin();
   app.innerHTML=html;
-  scrollTopNow();
+  // Only jump to the top when the screen actually changes; in-page actions
+  // (selecting, removing a time, etc.) keep the user where they were.
+  const vkey=v+((v==="custBook"&&ui.confirmed)?":done":"");
+  if(vkey!==lastView)scrollTopNow();
+  lastView=vkey;
 }
 function scrollTopNow(){
   window.scrollTo(0,0);
@@ -731,7 +733,6 @@ document.addEventListener('click',e=>{
   const a=el.dataset.action,id=el.dataset.id,d=el.dataset.d,t=el.dataset.t;
   switch(a){
     case"logout":logout();break;
-    case"go-home-btn":goHome();break;
     case"login-submit":doLogin(val("loginPhone"));break;
     case"register-submit":doRegister();break;
     case"cust-home":goHome();break;
