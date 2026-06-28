@@ -45,26 +45,26 @@ button{font-family:var(--body)}
 .topbar{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:10px;
   padding:12px 2px 12px;margin-bottom:4px}
 .topbar .logo-sm{height:24px;filter:drop-shadow(0 1px 1px rgba(255,248,235,.5))}
-.linkbtn{background:transparent;border:1.5px solid rgba(255,244,225,.28);color:var(--cream);
-  border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600;cursor:pointer}
-.linkbtn:hover{border-color:var(--gold);color:#fff}
-.iconbtn{width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;
-  background:rgba(255,244,225,.12);border:1.5px solid rgba(255,244,225,.3);color:var(--cream);cursor:pointer;padding:0;flex:0 0 auto}
-.iconbtn:hover{border-color:var(--gold);color:#fff}
-.iconbtn svg{width:21px;height:21px}
-.back{background:none;border:none;color:var(--cream-dim);cursor:pointer;font-size:15px;font-weight:600;
+.linkbtn{background:rgba(58,43,28,.05);border:1.5px solid rgba(58,43,28,.34);color:var(--walnut);
+  border-radius:999px;padding:9px 16px;font-size:14.5px;font-weight:700;cursor:pointer}
+.linkbtn:hover{border-color:var(--gold);color:var(--ink)}
+.iconbtn{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+  background:rgba(58,43,28,.06);border:1.5px solid rgba(58,43,28,.34);color:var(--walnut);cursor:pointer;padding:0;flex:0 0 auto}
+.iconbtn:hover{border-color:var(--gold);color:var(--ink)}
+.iconbtn svg{width:23px;height:23px}
+.back{background:none;border:none;color:var(--walnut);cursor:pointer;font-size:16px;font-weight:700;
   padding:8px 0;display:inline-flex;align-items:center;gap:6px}
-.back:hover{color:var(--cream)}
+.back:hover{color:var(--ink)}
 
 /* generic */
 .center{text-align:center}
 .muted{color:var(--muted)}
-.h-cream{font-family:var(--body);color:var(--cream);font-weight:800;letter-spacing:-.015em;margin:0}
+.h-cream{font-family:var(--body);color:var(--espresso);font-weight:800;letter-spacing:-.015em;margin:0}
 .card{background:var(--parch);border:1px solid var(--parch-line);border-radius:16px;color:var(--ink);
   box-shadow:0 14px 30px rgba(18,9,2,.38)}
 .pad{padding:18px}
 .field{display:block;margin-bottom:14px}
-.field>span{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:6px}
+.field>span{display:block;font-size:13.5px;font-weight:700;color:var(--walnut);margin-bottom:7px}
 input,select,textarea{width:100%;font-family:var(--body);font-size:16px;color:var(--ink);padding:13px 14px;
   border-radius:12px;border:1.5px solid var(--parch-line);background:var(--field);outline:none}
 input:focus,select:focus,textarea:focus{border-color:var(--gold)}
@@ -82,7 +82,7 @@ textarea{min-height:74px;resize:vertical}
   color:var(--walnut);font-weight:700;cursor:pointer;width:auto;min-height:44px}
 .mini.danger{color:var(--danger);border-color:#E2C2BC}
 .mini.gold{color:#2A1B0E;background:linear-gradient(180deg,#CD9E5B,#A87E3D);border-color:#8a6630}
-.note{font-size:12.5px;color:var(--muted);margin-top:8px}
+.note{font-size:13.5px;font-weight:600;color:var(--muted);margin-top:8px}
 .empty{color:var(--cream-dim);font-size:14.5px;background:rgba(36,24,13,.34);border:1px solid rgba(255,244,225,.14);
   border-radius:14px;padding:16px;text-align:center}
 
@@ -91,8 +91,8 @@ textarea{min-height:74px;resize:vertical}
 .login-wrap img.logo{width:min(64%,260px);margin:0 auto 10px;display:block;filter:drop-shadow(0 2px 5px rgba(0,0,0,.5))}
 
 /* home */
-.greet{font-family:var(--serif);color:var(--cream);font-size:24px;font-weight:500;text-align:center;margin:6px 0 0;line-height:1.3}
-.greet .fn{font-family:'Poppins',var(--body);font-weight:700;color:#fff;font-size:27px}
+.greet{font-family:var(--body);color:var(--espresso);font-size:26px;font-weight:700;text-align:center;margin:6px 0 0;line-height:1.3}
+.greet .fn{font-family:'Poppins',var(--body);font-weight:700;color:var(--walnut);font-size:31px}
 .home-logo{width:min(70%,280px);display:block;margin:18px auto 8px;filter:drop-shadow(0 2px 5px rgba(0,0,0,.5))}
 .tiles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
 .tile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;min-height:140px;
@@ -108,7 +108,7 @@ textarea{min-height:74px;resize:vertical}
 .row-between{display:flex;justify-content:space-between;align-items:center;gap:12px}
 .title-s{font-family:var(--body);font-size:18px;font-weight:700;letter-spacing:-.01em}
 .price{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--walnut);white-space:nowrap}
-.sub{color:var(--muted);font-size:13.5px;line-height:1.5}
+.sub{color:var(--muted);font-size:14.5px;font-weight:600;line-height:1.55}
 
 /* selectable specialist */
 .pick{display:flex;align-items:center;gap:14px;width:100%;text-align:right;background:rgba(244,238,225,.96);
@@ -120,9 +120,9 @@ textarea{min-height:74px;resize:vertical}
 .pick .rl{font-size:13px;color:var(--muted)}
 
 /* section heading on dark */
-.sec{font-family:var(--body);font-size:17px;font-weight:700;letter-spacing:-.01em;color:var(--cream);margin:22px 0 12px;display:flex;align-items:center;gap:12px}
-.sec::before{content:'';flex:0 0 18px;height:1px;background:rgba(255,244,225,.35)}
-.sec::after{content:'';flex:1;height:1px;background:rgba(255,244,225,.35)}
+.sec{font-family:var(--body);font-size:19px;font-weight:800;letter-spacing:-.01em;color:var(--espresso);margin:24px 0 14px;display:flex;align-items:center;gap:12px}
+.sec::before{content:'';flex:0 0 18px;height:2px;background:rgba(58,43,28,.28)}
+.sec::after{content:'';flex:1;height:2px;background:rgba(58,43,28,.28)}
 
 /* calendar 2 weeks */
 .calwrap{background:rgba(244,238,225,.96);border:1px solid var(--parch-line);border-radius:18px;padding:14px;box-shadow:0 12px 26px rgba(18,9,2,.34)}
@@ -132,7 +132,7 @@ textarea{min-height:74px;resize:vertical}
 .day{aspect-ratio:1/1;min-height:46px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;
   border-radius:12px;border:1.5px solid var(--parch-line);background:var(--field);color:var(--ink);cursor:pointer;padding:2px}
 .day .dn{font-family:var(--serif);font-size:18px;font-weight:600;line-height:1}
-.day .mk{font-size:9px;font-weight:700;line-height:1}
+.day .mk{font-size:10.5px;font-weight:800;line-height:1.1}
 .day.off{background:var(--parch-2);color:var(--disabled-ink);cursor:default;border-color:var(--parch-line)}
 .day.avail{border-color:var(--gold);color:var(--walnut)}
 .day.avail .mk{color:var(--gold-deep)}
@@ -174,8 +174,8 @@ textarea{min-height:74px;resize:vertical}
 
 /* tabs */
 .tabs{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 14px}
-.tab{padding:9px 13px;font-size:13.5px;border-radius:11px;border:1.5px solid rgba(255,244,225,.26);
-  background:rgba(36,24,13,.34);color:var(--cream-dim);cursor:pointer;font-weight:600}
+.tab{padding:10px 15px;font-size:14.5px;border-radius:11px;border:1.5px solid rgba(255,244,225,.22);
+  background:rgba(36,24,13,.46);color:var(--cream);cursor:pointer;font-weight:700}
 .tab.on{background:var(--parch);color:var(--ink);border-color:var(--parch)}
 
 /* pills (slots admin) */
@@ -185,6 +185,22 @@ textarea{min-height:74px;resize:vertical}
 .pill.booked{background:var(--parch-2);border-color:var(--gold)}
 .pill em{font-style:normal;font-size:11px;color:var(--gold-deep)}
 .pill button{border:none;background:none;cursor:pointer;color:var(--muted);font-size:20px;line-height:1;padding:0 2px;width:auto;min-height:0}
+/* availability editor (specialist + admin) */
+.availcard{background:#FFFCF5;border:1px solid var(--parch-line);border-radius:18px;padding:20px;box-shadow:0 12px 26px rgba(18,9,2,.34)}
+.availcard .field.big>span{font-size:14.5px;font-weight:800;color:var(--walnut)}
+.availcard .field.big input{font-size:18px;font-weight:700;padding:15px 14px;border-width:2px}
+.addrow{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:end}
+.addbtn{width:auto;min-height:54px;padding:0 22px;white-space:nowrap;font-size:16px}
+.availdiv{height:2px;background:var(--parch-line);margin:22px 0}
+.availlabel{font-size:17px;font-weight:800;color:var(--ink);margin:0 0 14px}
+.tpills{display:flex;flex-wrap:wrap;gap:10px}
+.tpill{display:inline-flex;align-items:center;gap:10px;background:var(--field);border:2px solid var(--gold);
+  border-radius:14px;padding:11px 12px 11px 16px;font-size:18px;font-weight:800;color:var(--walnut);min-height:52px}
+.tpill.booked{background:var(--parch-2);border-color:var(--disabled);color:var(--disabled-ink)}
+.tpill em{font-style:normal;font-size:12px;font-weight:800;color:var(--gold-deep)}
+.tpill button{border:none;background:rgba(156,75,63,.14);color:var(--danger);width:30px;height:30px;border-radius:50%;
+  font-size:21px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;flex:0 0 auto}
+.tpill button:hover{background:rgba(156,75,63,.26)}
 
 /* booking line (specialist) */
 .bk{background:rgba(244,238,225,.96);border:1px solid var(--parch-line);border-radius:14px;padding:14px;margin-bottom:10px}
@@ -375,7 +391,7 @@ function vCustTreatments(){
   return `${topbar()}
     <button class="back" data-action="cust-home">→ חזרה</button>
     <h1 class="h-cream" style="font-size:26px;margin:4px 0 4px">הטיפולים שלנו</h1>
-    <p class="sub" style="color:var(--cream-dim);margin:0 0 14px">לחצו על טיפול לפרטים נוספים</p>
+    <p class="sub" style="color:var(--walnut);margin:0 0 14px">לחצו על טיפול לפרטים נוספים</p>
     ${items||'<div class="empty">עדיין לא הוגדרו טיפולים.</div>'}`;
 }
 function vCustDetail(){
@@ -479,7 +495,7 @@ function vSpec(){
   else body=specAvail(sp);
   return `${topbar()}
     <div class="greet" style="font-size:21px;text-align:right;margin:0 0 2px">${greeting()}, <span class="fn" style="font-size:23px">${esc(firstName(sp.name))}</span></div>
-    <p class="sub" style="color:var(--cream-dim);margin:0 0 8px">${esc(sp.role)}</p>
+    <p class="sub" style="color:var(--walnut);margin:0 0 8px">${esc(sp.role)}</p>
     <div class="tabs">${tabBar}</div>${body}`;
 }
 function specCal(sp){
@@ -513,11 +529,11 @@ function specCal(sp){
           <button class="mini danger" data-action="spec-del" data-id="${b.id}">מחיקה</button></div></div>
         <div class="sub mt8">${tr?esc(tr.name):'—'} ${tr?'('+esc(money(tr.price))+')':''}${b.phone?' · '+esc(b.phone):''}</div>
         ${resched}</div>`;}).join("");
-    const freeLine=free.length?`<div class="sub" style="color:var(--cream-dim);margin:4px 2px 0">שעות פנויות: ${free.join(", ")}</div>`:`<div class="sub" style="color:var(--cream-dim);margin:4px 2px 0">אין שעות פנויות.</div>`;
+    const freeLine=free.length?`<div class="sub" style="color:var(--walnut);margin:4px 2px 0">שעות פנויות: ${free.join(", ")}</div>`:`<div class="sub" style="color:var(--walnut);margin:4px 2px 0">אין שעות פנויות.</div>`;
     dayView=`<div class="sec">${esc(heLong(iso))}</div>${bookings.length?bk:'<div class="empty">אין תורים מוזמנים ליום זה.</div>'}${freeLine}`;
   }
   return `<div class="calwrap"><div class="dow">${dows.map(d=>`<span>${d}</span>`).join("")}</div><div class="cal">${cells}</div></div>
-    <p class="note" style="color:var(--cream-dim)">לחצי על יום כדי לראות ולנהל את התורים בו.</p>${dayView}`;
+    <p class="note" style="color:var(--walnut)">לחצי על יום כדי לראות ולנהל את התורים בו.</p>${dayView}`;
 }
 function specTrt(sp){
   const list=trtsOf(sp.id).map(tr=>{
@@ -549,17 +565,23 @@ function availEditor(sid){
   const date=ui.availDate;
   const slots=((state.availability[sid]||{})[date]||[]).slice().sort();
   const slotChips=slots.length?slots.map(t=>{const taken=isBooked(sid,date,t);
-    return `<span class="pill ${taken?'booked':''}">${t}${taken?'<em>תפוס</em>':`<button data-action="avail-remove" data-sid="${sid}" data-t="${t}">×</button>`}</span>`;}).join("")
-    :`<div class="empty">אין עדיין שעות ליום זה.</div>`;
-  return `<div class="dcard">
-    <label class="field"><span>תאריך</span><input id="availDate" type="date" min="${todayIso()}" value="${date}"></label>
-    <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end">
-      <label class="field" style="flex:1;min-width:130px;margin-bottom:0"><span>הוספת שעה</span><input id="availTime" type="time" value="09:00"></label>
-      <button class="mini gold" data-action="avail-add" data-sid="${sid}">הוספה</button>
-    </div>
-    <button class="mini" style="width:100%;margin-top:14px" data-action="avail-fill" data-sid="${sid}">מילוי יום עבודה 9–17</button>
-    <div class="sub" style="margin:18px 0 10px">שעות ב-${esc(heLong(date))}:</div>
-    <div class="pillwrap">${slotChips}</div></div>`;
+    return `<span class="tpill ${taken?'booked':''}">${t}${taken?'<em>תפוס</em>':`<button data-action="avail-remove" data-sid="${sid}" data-t="${t}" aria-label="הסרת השעה ${t}">×</button>`}</span>`;}).join("")
+    :`<div class="empty">אין עדיין שעות פעילות ליום זה.</div>`;
+  const closed=isSat(date);
+  const adder=closed
+    ? `<div class="empty">שבת — הסטודיו סגור. לא ניתן להוסיף שעות.</div>`
+    : `<div class="addrow">
+        <label class="field big" style="margin:0"><span>שעה חדשה</span><input id="availTime" type="time" step="1800" value="09:00"></label>
+        <button class="btn btn-dark addbtn" data-action="avail-add" data-sid="${sid}">+ הוספה</button>
+      </div>
+      <button class="btn btn-gold addbtn" style="width:100%;margin-top:12px" data-action="avail-fill" data-sid="${sid}">מילוי יום עבודה (09:00–17:00)</button>`;
+  return `<div class="availcard">
+    <label class="field big"><span>בחירת תאריך</span><input id="availDate" type="date" min="${todayIso()}" value="${date}"></label>
+    ${adder}
+    <div class="availdiv"></div>
+    <div class="availlabel">שעות פעילות · ${esc(heLong(date))}</div>
+    <div class="tpills">${slotChips}</div>
+  </div>`;
 }
 
 /* ---------- admin ---------- */
@@ -588,7 +610,7 @@ function admUsers(){
         <label class="field" style="flex:1;margin:0"><span>הוספת מספר מנהל</span><input id="newAdmin" type="tel" dir="ltr" placeholder="0500000000"></label>
         <button class="mini gold" data-action="adm-add-admin">הוספה</button></div></div>
     <div class="sec">תיוג מומחיות (Specialist)</div>
-    <p class="sub" style="color:var(--cream-dim);margin:-6px 0 10px">מספרים מתויגים יופנו אוטומטית למסך המומחית.</p>
+    <p class="sub" style="color:var(--walnut);margin:-6px 0 10px">מספרים מתויגים יופנו אוטומטית למסך המומחית.</p>
     ${specs||'<div class="empty">אין מומחיות מתויגות.</div>'}
     <div class="dcard"><div class="title-s" style="font-size:16px;margin-bottom:10px">תיוג מספר חדש כמומחית</div>
       <label class="field"><span>שם</span><input id="nsName" placeholder="שם מלא"></label>
@@ -609,7 +631,7 @@ function admSpecs(){
       <div style="display:flex;gap:12px;align-items:center"><span class="mono">${esc(monogram(s.name))}</span>
         <div><div class="title-s" style="font-size:17px">${esc(s.name)}</div><div class="sub">${esc(s.role)}</div></div></div>
       <button class="mini" data-action="spec-edit" data-id="${s.id}">עריכה</button></div>`;}).join("");
-  return `${list||'<div class="empty">אין מומחיות.</div>'}<p class="note" style="color:var(--cream-dim)">להוספה/הסרה של מומחית השתמשו בטאב «משתמשים».</p>`;
+  return `${list||'<div class="empty">אין מומחיות.</div>'}<p class="note" style="color:var(--walnut)">להוספה/הסרה של מומחית השתמשו בטאב «משתמשים».</p>`;
 }
 function admAvail(){
   if(!state.specialists.length)return `<div class="empty">הוסיפו מומחית קודם.</div>`;
